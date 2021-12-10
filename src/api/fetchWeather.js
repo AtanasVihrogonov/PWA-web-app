@@ -7,7 +7,7 @@ const API_KEY = '364c9d5917e8424053360fb7d0901710'
 // query = the name of the town we wont to search for.
  export const fetchWeather = async (query) => {
   // get response once we make a call to the URL of the API. Destructure the data from the response.
-  const response = await axios.get(URL, {
+  const {data} = await axios.get(URL, {
     params: {
       q: query,
       units: 'metric',
@@ -15,5 +15,5 @@ const API_KEY = '364c9d5917e8424053360fb7d0901710'
     },
   })
 
-  return response
+  return data
 }
