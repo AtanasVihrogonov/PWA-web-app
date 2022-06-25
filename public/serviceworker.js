@@ -3,7 +3,7 @@ const CACHE_NAME = 'version-1'
 // create a variable that will be store index.js and the name of the file if there is no connection.
 const urlsToCache = ['index.html', 'offline.html']
 
-// const self = this
+const self = this
 
 // write events for:
 // Install SW
